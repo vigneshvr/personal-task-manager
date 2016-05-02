@@ -1,0 +1,14 @@
+<div class="col-sm-4 col-lg-4 col-md-4">
+	<table class="table table-bordered">
+		<b>{{vm.list.title}}</b>
+		<button class="btn btn-default pull-right" ng-click="vm.onDelete({list: vm.list})">Delete this list</button><br>
+	</table>
+	<br>
+	<table class="table table-bordered">
+		<!-- <card data-drag="true" jqyoui-draggable ng-repeat="card in vm.list.cards" card="card" on-update-card="vm.updateCard(card)"></card>-->
+		<card ng-repeat="card in vm.list.cards" card="card" on-update-card="vm.updateCard(card)"></card>
+		<tr><td>
+			<button class="btn btn-default" style="width:100%" ng-click="vm.showModal()">Add new card...</button>
+		</tr></td>
+	</table>
+</div>

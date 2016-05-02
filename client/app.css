@@ -1,0 +1,7 @@
+.myclass {
+	.square(400px);
+}
+
+*{
+	word-wrap: break-word
+}

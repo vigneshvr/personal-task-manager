@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="bower_components\bootstrap\dist\css\bootstrap.css"></link>
+		<link rel="stylesheet" type="text/css" href="app.css"></link>
+
+	</head>
+	<body ng-app="app">
+	    <!-- Page Content -->
+	    <div class="container">
+	    	<div class="row">
+	                <div class="page-header">
+	                	<hr>
+	                    <h1>Personal Task Manager</h1>
+	                </div>
+	            </div>
+	    </div>
+	    <board></board>
+	    <div class="container">
+	        <hr>
+	    </div>
+    <script type="text/javascript" src="bower_components\angular\angular.js"></script>
+    <script type="text/javascript" src="bower_components\jquery\dist\jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower_components\angular-bootstrap\ui-bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower_components\angular-bootstrap\ui-bootstrap-tpls.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-dragdrop/src/angular-dragdrop.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<script type="text/javascript" src="services/modalservice.js"></script>
+	<script type="text/javascript" src="components/board/board.module.js"></script>
+	<script type="text/javascript" src="components/board/board.controller.js"></script>
+	<script type="text/javascript" src="components/board/board.component.js"></script>
+	<script type="text/javascript" src="components/list/list.module.js"></script>
+	<script type="text/javascript" src="components/list/list.controller.js"></script>
+	<script type="text/javascript" src="components/list/list.component.js"></script>
+	<script type="text/javascript" src="components/newList/newList.module.js"></script>
+	<script type="text/javascript" src="components/newList/newList.controller.js"></script>
+	<script type="text/javascript" src="components/newList/newList.component.js"></script>
+	<script type="text/javascript" src="components/card/card.module.js"></script>
+	<script type="text/javascript" src="components/card/card.controller.js"></script>
+	<script type="text/javascript" src="components/card/card.component.js"></script>
+	<script type="text/javascript" src="components/addComment/addComment.module.js"></script>
+	<script type="text/javascript" src="components/addComment/addComment.controller.js"></script>
+	<script type="text/javascript" src="components/addComment/addComment.component.js"></script>
+	</body>
+</html>

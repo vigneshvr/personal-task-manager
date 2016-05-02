@@ -1,0 +1,12 @@
+<div ng-switch="vm.getState()">
+	<button ng-switch-when="new" class="btn btn-default" ng-click="vm.changeState('add')">Add Comment</button>
+	<div ng-switch-when="add">
+		<form class="form-inline">
+			<div class="form-group">
+				<label for="Comment">Comment</label>
+	    		<input type="text" class="form-control" id="Comment" placeholder="Comment" ng-model="vm.comment">
+	    	</div>
+	    	<button type="submit" class="btn btn-default" ng-click="vm.addComment(vm.comment)">Save Comment</button>
+	    </form>
+	</div>
+</div>

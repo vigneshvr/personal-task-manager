@@ -1,0 +1,12 @@
+<div ng-switch="vm.getState()">
+	<button ng-switch-when="new" class="btn btn-default" ng-click="vm.changeState('add')">Add new list...</button>
+	<div ng-switch-when="add">
+		<form class="form-inline">
+			<div class="form-group">
+				<label for="listName">List Name</label>
+	    		<input type="text" class="form-control" id="listName" placeholder="List Name" ng-model="vm.listname">
+	    	</div>
+	    	<button type="submit" class="btn btn-default" ng-click="vm.addList(vm.listname)">Add List</button>
+	    </form>
+	</div>
+</div>

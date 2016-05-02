@@ -1,0 +1,52 @@
+<!--<div class="modal-header">
+    <h3>{{modalOptions.headerText}}</h3>
+</div>
+<form ng-submit="modalOptions.submit()">
+<div class="modal-body">
+    <label>Name</label>
+    <input type="text" data-ng-model="mydata.name">
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn" data-ng-click="modalOptions.close()">{{modalOptions.closeButtonText}}</button>
+    <button type="submit" class="btn btn-primary" data-ng-click="modalOptions.ok(mydata)">{{modalOptions.actionButtonText}}</button>
+</div>-->
+
+<div class="modal-header">
+    <h3>{{modalOptions.headerText}}</h3>
+</div>
+	<form ng-submit="modalOptions.submit()">
+		<div class="container">
+			<div class="row">
+			    <div class="modal-body col-sm-4 col-lg-4 col-md-4">
+			    	<label for="cardTitle">Card title</label>
+			    	<textarea rows="2" id="cardTitle" class="form-control" data-ng-model="card.title" placeholder="Card Title"></textarea>
+			    	<hr>
+			    	<textarea rows="3" id="cardDescription" class="form-control" data-ng-model="card.description" placeholder="Card Description"></textarea>
+			    	<hr>
+			    	<add-comment on-add="addComment(comment)"></add-comment>
+			    	<div ng-repeat="comment in card.comments">
+			    		<div class="container">
+			    			<div class="row">
+			    				<div class="col-sm-2 col-lg-2 col-md-2">
+			    					<b>{{comment.data}}</b>
+			    				</div>
+			    				<div class="col-sm-2 col-lg-2 col-md-2">
+			    					<b class="pull-right">{{comment.timestamp}}</b>
+			    				</div>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </div>
+			    <div class="col-sm-4 col-lg-4 col-md-4">
+			    	<br>
+			    	<br>
+			    	<button type="button" class="btn" data-ng-click="modalOptions.ok()">Delete Card</button>
+			    </div>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn" data-ng-click="modalOptions.close()">{{modalOptions.closeButtonText}}</button>
+	<button type="submit" class="btn btn-primary" data-ng-click="modalOptions.ok(card)">{{modalOptions.actionButtonText}}</button>
+</div>
